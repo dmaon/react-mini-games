@@ -7,5 +7,6 @@ A simple shooter game without using canvas.
 
 ## Lights Off
 Lights off is a simple puzzle game. The game goal is to turn out all the lights, ideally with the minimum number of clicks.
-<img width="512" height="512" src="lights-off/lights-off.png" alt="Lights off is a simple puzzle game." title="Spider Slayer" />
+<br/>
+<img width="256" height="256" src="lights-off/lights-off.png" alt="Lights off is a simple puzzle game." title="Spider Slayer" />
 
