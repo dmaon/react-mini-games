@@ -1,0 +1,68 @@
+:root {
+  --body-background-color : ghostwhite;
+  --box-bg-color: black;
+  --menu-bg-color: rgba(0, 0, 0, 0.788);
+  --cell-border-color: rgba(148, 146, 133, 0.582);
+  --cell-light-off-color: rgba(48, 47, 47, 0.507);
+  --cell-light-on-color: aqua;
+  --level-color: rgb(226, 225, 225);
+  --moves-color: rgb(155, 154, 154);
+}
+
+body {
+  background-color: var(--body-background-color);
+}
+
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.menu {
+  background-color: var(--menu-bg-color);
+  text-align: center;
+  padding: 10px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.menu .level {
+  display: block;
+  color: var(--level-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.menu .moves {
+  display: block;
+  color: var(--moves-color);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.box {
+  background-color: var(--box-bg-color);
+  width: 400px;
+  height: 400px;
+}
+
+.box .cell {
+  width: 72px;
+  height: 72px;
+  background-color: var(--cell-light-off-color);
+  border: 1px solid var(--cell-border-color);
+  border-radius: 10px;
+  float: left;
+  margin: 5px 0px 0px 5px;
+  transition-property: background-color;
+  transition-duration: 200ms;
+}
+
+@media screen and (max-width: 400px) {
+  .box {
+    width: 300px;
+    height: 300px;
+  }
+}
